@@ -1,0 +1,275 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Roboto' , 'sans-serif';
+    font-size:12px;
+}
+body{
+    font-family:'Roboto';
+    background-color:#ebebeb;
+}
+.main-header{
+    background-color:#eac926;
+    padding:20px;
+}
+.logo{
+   width: 200px;
+}
+.copy-header{
+    font-weight: 400px; 
+    text-align: center;
+}
+.hamburger-button{
+    background-color:#03264c;
+    color:#ffffff;
+    display:block;
+    max-width:50px;
+    padding:15px 0;
+    border-radius:8px;
+    text-align: center;
+    font-size:17px;
+    margin:auto;
+}
+.main-navbar {
+   display:none;
+}
+
+.main-navbar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color:#222222;
+    display:inline-block;
+    padding:5px 0;
+    font-size:17px;
+}
+
+.create-form{
+    padding:20px 15px;
+}
+
+header form{
+    text-align: center;
+}
+.control-formulario{
+    margin-bottom: 15px;
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display:block;
+}
+.control{
+    width:100%;
+    padding: 8px 0;
+}
+.boton-fomulario{
+    background-color:#39b54a;
+    color:#ffffff;
+    padding:5px 10px;
+    font-size:20px;
+    border-radius:5px;
+}
+
+.banner{
+    display:block;
+    margin:auto;
+    width:100%;
+    padding: 10px 0;
+}
+
+h2 {
+    font-size:24px;
+}
+article{
+    box-sizing: content-box;
+    width: 100%;
+    display:block;
+    align-items:center;
+    text-align: center;
+    margin: auto;
+}
+
+.article-image{
+    width:100%;
+    margin:auto;
+   
+}
+.image-container{
+    display:inline-block;
+    width:100%;
+}
+
+.article-desciption{
+    display:block;   
+    width: 100%;
+    background-color:white;
+    margin:auto;
+    position:relative;
+}
+.truck{
+    display:block;
+    font-size:16px;
+    padding:5px;
+    width:30px;
+    height:30px;
+    border:1px solid #39b54a;
+    color:#39b54a; 
+    background-color:#fff;
+    border-radius: 50%;
+    position:absolute;
+    right:20px;
+    top:-15px;
+}
+.price-offer-container{
+    display:flex;
+    /* text-align: left; */
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    width:30%;
+    font-size:18px;
+    text-align: center; 
+}
+.discount{
+    width:70%;
+    font-size:16px;
+    color:#39b54a;
+    text-align: left;
+}
+.description{
+   font-size: 16px;
+   opacity:0%;
+    padding-bottom:10px;
+}
+
+footer{
+    background-color:white;
+    margin: auto;
+    align-items:center;
+   
+}
+footer p, footer h2{
+    padding: 0 50px;
+    text-align: center;
+    margin: auto;
+    align-items:center;
+    color:#666;
+}
+
+.img-footer{
+    color:#03264C;
+    display:block;
+    max-width:50px;
+    padding-bottom:10px;
+    text-align: center;
+    font-size:2em;
+    margin:auto;
+}
+
+footer section{
+    padding: 10px 0;
+}
+
+
+.description:hover{
+    opacity:100%;
+}
+
+
+
+article:hover{
+    box-shadow: 0 0 10px rgba(0,0,0);
+}
+
+.truck:hover{
+    animation:truck-rotate 1s;
+ }
+@keyframes truck-rotate {
+ 
+    100% {transform: rotate(-90deg); } 
+    
+}
+
+.login-button:hover{
+   background-color: #0022AA;
+   color:white;
+}
+
+@media (min-width:768px) {
+    .main-header-top-bar{
+        display:flex;
+        justify-content:space-between;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburger-button{
+        display:none;
+    }
+    .main-navbar {
+        display:flex;
+        justify-content:space-between;
+    }
+    .main-navbar ul{
+        display:flex;
+    }
+    .main-navbar li{
+        margin:0 5px;
+    }
+    
+    article{
+        max-width:40%
+    }
+
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;  
+    }
+}
+
+
+@media (min-width:1200px) {
+
+    article{
+        max-width:20%
+    }
+    .logo{
+        width: 300px;
+     }
+    .main-header-top-bar,.main-navbar {
+        max-width:1200px;
+        margin:auto;
+    }
+    .main-header-top-bar{
+        align-items:center;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 24px;
+        font-weight:400;
+    }
+    .main-navbar li{
+        margin:0 10px;
+    }
+    .main-navbar a{
+        font-size: 20px;
+    }  
+
+
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img-footer:hover{
+        color:#eac926;
+    }
+}
