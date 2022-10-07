@@ -193,19 +193,24 @@ article:hover{
 .truck:hover{
     animation:truck-rotate 1s;
  }
-.login-container{
+.login-container,.container-register{
     padding:100px;
 }
- .login-box{
+ .login-box, .register-box{
     padding:10px;
     display:block;
     margin:auto;
     width:90%;
     max-width:500px;
     background-color:rgba(255,255,255,0.5);
-    border-radius: 5px;;
+    border-radius: 10px;;
  }
+ .login-tittle{
+    margin: auto;
+    display: flex;
+    justify-content: center;
 
+ }
  .data{
     margin:auto;
     width:90%;
@@ -213,13 +218,19 @@ article:hover{
     flex-direction:column;
     margin-bottom: 10px;
  }
- .login-button{
+ .data-inline{
+    display:flex;
+    flex-direction:inline;
+    margin:auto;
+    width:90%;
+    margin-bottom: 10px;
+ }
+ .login-button, .register-buttons{
     display:block;
     margin:auto;
     margin-bottom: 10px;
     border-radius: 5px;
     width:30%;
-
  }
 @keyframes truck-rotate {
  
