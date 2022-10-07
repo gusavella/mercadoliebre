@@ -86,13 +86,17 @@ h2 {
 }
 article{
     box-sizing: content-box;
-    width: 100%;
+    width: 90%;
     display:block;
     align-items:center;
     text-align: center;
     margin: auto;
 }
-
+.article-container{
+    padding:15px;
+    background-color:white;
+    margin-bottom: 10px;
+}
 .article-image{
     width:100%;
     margin:auto;
@@ -106,9 +110,9 @@ article{
 .article-desciption{
     display:block;   
     width: 100%;
-    background-color:white;
     margin:auto;
     position:relative;
+    margin-top:1px solid #ebebeb;
 }
 .truck{
     display:block;
@@ -162,7 +166,7 @@ footer p, footer h2{
 }
 
 .img-footer{
-    color:#03264C;
+    color:#1259c3;
     display:block;
     max-width:50px;
     padding-bottom:10px;
