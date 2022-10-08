@@ -11,12 +11,39 @@ body{
     background-color:#eac926;
     padding:20px;
 }
+.main-header-top-bar{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
 .logo{
-   width: 200px;
+  width: 50%;
+}
+.search{
+    position:relative;
+    display:inline;
+    width: 50%;
+  
+}
+.input-search{
+    max-width: 100%;
+    padding:10px;
+    border-radius:5px;
+
+}
+.search-img{
+    position:absolute;
+    left:140px;
+    bottom:0px;
+    background-color:white;
+    border:white solid 1px;
+
 }
 .copy-header{
-    font-weight: 400px; 
-    text-align: center;
+     width:50%;  
 }
 .hamburger-button{
     background-color:#03264c;
@@ -65,13 +92,6 @@ header form{
 .control{
     width:100%;
     padding: 8px 0;
-}
-.boton-fomulario{
-    background-color:#39b54a;
-    color:#ffffff;
-    padding:5px 10px;
-    font-size:20px;
-    border-radius:5px;
 }
 
 .banner{
@@ -184,17 +204,11 @@ footer section{
     opacity:100%;
 }
 
-
-
-article:hover{
-    box-shadow: 0 0 10px rgba(0,0,0);
-}
-
 .truck:hover{
     animation:truck-rotate 1s;
  }
 .login-container,.container-register{
-    padding:100px;
+    padding:10%;
 }
  .login-box, .register-box{
     padding:10px;
@@ -226,11 +240,23 @@ article:hover{
     margin-bottom: 10px;
  }
  .login-button, .register-buttons{
-    display:block;
+    display:flex;
     margin:auto;
     margin-bottom: 10px;
     border-radius: 5px;
     width:30%;
+    justify-content: center;
+
+ }
+ .cagegories{
+    display:flex;
+    flex-direction:inline; 
+    flex-wrap: wrap;
+ }
+ .categories-radio{
+    display: flex;
+    align-content: center;
+     align-items: center;
  }
 @keyframes truck-rotate {
  
@@ -243,14 +269,32 @@ article:hover{
    color:white;
 }
 
-@media (min-width:768px) {
+@media (min-width:481px) {
     .main-header-top-bar{
         display:flex;
         justify-content:space-between;
     }
+    .logo{
+        width: 30%;
+      }
+    .search{
+        width: 30%;
+    }
     .copy-header{
-        max-width: 350px;
+        max-width: 30%;
         text-align: right;
+    }
+    .input-search{
+        max-width: 100%;
+        border-radius:5px;
+        padding:2px;
+    
+    }
+    .search-img{
+        position:absolute;
+        background-color:#ebebeb;
+        border:none;
+    
     }
     .hamburger-button{
         display:none;
@@ -275,6 +319,10 @@ article:hover{
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;  
+    }
+    
+    article:hover{
+        box-shadow: 0 0 10px rgb(100,100,100);
     }
 }
 

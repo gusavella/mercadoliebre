@@ -88,72 +88,94 @@
               <input type="text" name="adress" id="adress" />
             </div>
             <div class="data-inline">
-              <label for="profile">Perfil de usuario:</label>
+              <div><label for="profile">Perfil de usuario:</label></div>
+              <div class="categories">
+                <div class="categories-radio">
                   <input
-                  type="radio"
-                  name="buy"
-                  id="profile"
-                  value="buy"
-                />Comprar
-                <input
-                  type="radio"
-                  name="sell"
-                  id="profile"
-                  value="sell"
-                />Vender
-              </select>
+                    type="radio"
+                    name="buy"
+                    id="profile"
+                    value="buy"
+                  />Comprar
+                </div>
+                <div class="categories-radio">
+                  <input
+                    type="radio"
+                    name="sell"
+                    id="profile"
+                    value="sell"
+                  />Vender
+                </div>
+              </div>
             </div>
-          <div class="data-inline">
+            <div class="data-inline">
+              <div><label for="categories">Categorias de interes:</label></div>
 
-           
-            <label for="categories">Categorias de interes:</label>
+              <div class="cagegories">
+                <div class="categories-radio">
+                  <input
+                    type="checkbox"
+                    name="categories"
+                    id="electro"
+                    value="electro"
+                  />
+                  <label for="electro">Electro</label>
+                </div>
+                <div class="categories-radio">
+                  <input
+                    type="checkbox"
+                    name="categories"
+                    id="moda"
+                    value="moda"
+                  />
+                  <label for="moda">Moda</label>
+                </div>
+                <div class="categories-radio">
+                  <input
+                    type="checkbox"
+                    name="categories"
+                    id="hogar"
+                    value="hogar"
+                  />
+                  <label for="hogar">Hogar</label>
+                </div>
+                <div class="categories-radio">
+                  <input
+                    type="checkbox"
+                    name="categories"
+                    id="jugueteria"
+                    value="jugueteria"
+                  />
+                  <label for="jugueteria">Jugueteria</label>
+                </div>
+                <div class="categories-radio">
+                  <input
+                    type="checkbox"
+                    name="categories"
+                    id="vidaSana"
+                    value="vidaSana"
+                  />
+                  <label for="vidaSana">Vida Sana</label>
+                </div>
+              </div>
+            </div>
 
-            <input
-              type="checkbox"
-              name="categories"
-              id="electro"
-              value="electro"
-            />
-            <label for="electro">Electro</label>
-
-            <input type="checkbox" name="categories" id="moda" value="moda" />
-            <label for="moda">Moda</label>
-
-            <input type="checkbox" name="categories" id="hogar" value="hogar" />
-            <label for="hogar">Hogar</label>
-          
-            <input
-              type="checkbox"
-              name="categories"
-              id="jugueteria"
-              value="jugueteria"
-            />
-            <label for="jugueteria">Jugueteria</label>
-
-            <input
-              type="checkbox"
-              name="categories"
-              id="vidaSana"
-              value="vidaSana"
-            />
-            <label for="vidaSana">Vida Sana</label>
-          </div>
-          <div class="data">
-            <label for="userphoto">Foto de usuario</label>
-            <input type="file" name="userphoto" id="userphoto" />
+            <div class="data">
+              <label for="userphoto">Foto de usuario</label>
+              <input type="file" name="userphoto" id="userphoto" />
             </div>
             <div class="data">
-            <label for="password">Contraseña</label>
-            <input type="password" name="password" id="password" />
+              <label for="password">Contraseña</label>
+              <input type="password" name="password" id="password" />
             </div>
             <div class="data">
-            <label for="password">Confirmar contraseña</label>
-            <input type="password" name="password" id="password" />
-</div>
-<div class="register-buttons">
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar todo</button>
-        </div>
+              <label for="password">Confirmar contraseña</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="register-buttons">
+              <button type="submit">Enviar</button>
+              <button type="reset">Borrar todo</button>
+            </div>
           </form>
         </div>
       </div>
