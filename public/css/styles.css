@@ -114,11 +114,13 @@ article{
     align-items:center;
     text-align: center;
     margin: auto;
+    margin-bottom: 10px;
 }
 .article-container{
+
     padding:15px;
     background-color:white;
-    margin-bottom: 10px;
+   
 }
 .article-image{
     width:100%;
@@ -135,7 +137,7 @@ article{
     width: 100%;
     margin:auto;
     position:relative;
-    margin-top:1px solid #ebebeb;
+    border-top: solid 1px #ebebeb;
 }
 .truck{
     display:block;
@@ -194,7 +196,7 @@ footer p, footer h2{
     max-width:50px;
     padding-bottom:10px;
     text-align: center;
-    font-size:2em;
+    font-size: 2em;
     margin:auto;
 }
 
